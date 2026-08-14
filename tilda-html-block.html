@@ -102,6 +102,12 @@ h1 span { font-family:"Pangolin",cursive; color:var(--light-pink); font-weight:4
 .step-grid li:nth-child(even) span { color:var(--blue); }
 .step-grid p { margin:0; font-size:14px; line-height:1.5; font-weight:700; }
 .inline-trial { max-width:780px; margin:75px auto 0; }
+.consultation-card { max-width:1040px; display:grid; grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr); gap:38px; align-items:center; padding:34px; background:var(--soft-pink); border:var(--line); border-radius:28px 20px 34px 24px; box-shadow:9px 9px 0 var(--ink); }
+.consultation-copy { min-width:0; }
+.consultation-copy .eyebrow { margin-bottom:12px; }
+.consultation-copy h3 { margin:0 0 14px; font-size:clamp(34px,4vw,52px); line-height:1; letter-spacing:-.04em; }
+.consultation-copy > p:last-child { margin:0; font-size:15px; line-height:1.55; font-weight:600; }
+.consultation-card .signup-form { background:white; }
 .prices { background:#f8f5ff; }
 .price-benefits { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:28px; }
 .price-benefits span { background:white; border:2px solid var(--ink); padding:10px 14px; border-radius:40px; font-size:12px; font-weight:700; }
@@ -250,6 +256,8 @@ footer { background:var(--blue); color:white; padding:80px clamp(20px,6vw,96px) 
   .trial-band { padding:65px 20px; }
   .signup-form,.signup-form.compact { width:100%; grid-template-columns:minmax(0,1fr); padding:20px; box-shadow:5px 5px 0 var(--pink); }
   .signup-form button,.signup-form small,.signup-form .success { grid-column:1; }
+  .consultation-card { grid-template-columns:1fr; gap:24px; margin-top:52px; padding:24px 18px; border-radius:22px; box-shadow:6px 6px 0 var(--ink); }
+  .consultation-copy h3 { font-size:38px; }
   .teacher-grid { grid-template-columns:1fr; }
   .teacher-card:last-child { grid-column:auto; max-width:none; }
   .teacher-photo { height:420px; }
