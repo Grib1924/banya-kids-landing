@@ -40,6 +40,17 @@ h1 span { font-family:"Pangolin",cursive; color:var(--light-pink); font-weight:4
 .primary-button { display:inline-flex; align-items:center; justify-content:center; width:max-content; max-width:100%; min-height:58px; background:var(--pink); color:white; padding:16px 25px; border:2px solid white; border-radius:14px; text-decoration:none; font-weight:900; box-shadow:5px 5px 0 white; transition:.2s; text-align:center; }
 .primary-button:hover { transform:translate(-2px,-2px); box-shadow:10px 10px 0 var(--pink); }
 .hero-doodle { position:absolute; right:2%; bottom:4%; filter:brightness(0) invert(1); transform:rotate(12deg); opacity:.65; }
+.early-locations { display:grid; grid-template-columns:minmax(240px,.8fr) minmax(260px,1fr) minmax(260px,1fr); gap:18px; align-items:stretch; padding:28px clamp(20px,4vw,68px); background:white; border-bottom:var(--line); }
+.early-locations-intro { align-self:center; min-width:0; }
+.early-locations-intro .eyebrow { margin-bottom:10px; }
+.early-locations-intro h2 { margin:0; max-width:340px; font-size:clamp(27px,2.6vw,42px); line-height:1; letter-spacing:-.04em; }
+.early-location-card { min-width:0; display:flex; flex-direction:column; justify-content:center; padding:20px 22px; color:var(--ink); background:#f8f5ff; border:2px solid var(--ink); border-radius:22px 16px 25px 18px; text-decoration:none; box-shadow:5px 5px 0 var(--yellow); transition:transform .2s,box-shadow .2s; }
+.early-location-card.pink { background:var(--soft-pink); box-shadow:5px 5px 0 var(--pink); }
+.early-location-card:hover { transform:translateY(-2px); box-shadow:7px 7px 0 var(--pink); }
+.early-location-card span { font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:.04em; }
+.early-location-card strong { margin:7px 0 3px; font-size:25px; line-height:1; }
+.early-location-card p { margin:0 0 9px; font-size:13px; font-weight:600; }
+.early-location-card b { font-size:12px; text-decoration:underline; text-underline-offset:3px; }
 .facts { display:grid; grid-template-columns:repeat(4,1fr); gap:0; border-bottom:var(--line); background:white; }
 .fact { padding:27px clamp(18px,2.5vw,40px); display:flex; gap:16px; align-items:center; border-right:2px solid var(--ink); min-height:136px; }
 .fact:last-child { border-right:0; }
@@ -175,6 +186,9 @@ footer { background:var(--blue); color:white; padding:80px clamp(20px,6vw,96px) 
   .hero-copy { width:min(720px,78vw); }
   .hero-doodle { display:none; }
   .facts { grid-template-columns:1fr 1fr; }
+  .early-locations { grid-template-columns:1fr 1fr; }
+  .early-locations-intro { grid-column:1/-1; }
+  .early-locations-intro h2 { max-width:none; }
   .fact:nth-child(2) { border-right:0; }
   .fact:nth-child(-n+2) { border-bottom:2px solid var(--ink); }
   .why-layout { grid-template-columns:1fr; }
@@ -239,6 +253,10 @@ footer { background:var(--blue); color:white; padding:80px clamp(20px,6vw,96px) 
   h1 span { white-space:normal; }
   .primary-button { width:100%; font-size:14px; }
   .facts { grid-template-columns:1fr; }
+  .early-locations { grid-template-columns:1fr; gap:13px; padding:28px 16px 34px; }
+  .early-locations-intro { grid-column:auto; margin-bottom:4px; }
+  .early-location-card { padding:19px 18px; }
+  .early-location-card strong { font-size:23px; }
   .fact { border-right:0; border-bottom:2px solid var(--ink); min-height:100px; }
   .fact:last-child { border-bottom:0; }
   .section { padding:75px 20px; }

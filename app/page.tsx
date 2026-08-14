@@ -90,6 +90,25 @@ export default function Home() {
         <Image className="hero-doodle" src="/assets/loop-arrow.png" alt="" width={120} height={120} />
       </section>
 
+      <section className="early-locations" aria-label="Филиалы творческой мастерской Баня">
+        <div className="early-locations-intro">
+          <p className="eyebrow">два филиала в Москве</p>
+          <h2>Выберите тот, что ближе</h2>
+        </div>
+        <a className="early-location-card" href="https://yandex.ru/maps/?text=Москва%2C%20Снежная%2017к2" target="_blank" rel="noreferrer">
+          <span>на севере · 4 минуты от метро</span>
+          <strong>Свиблово</strong>
+          <p>ул. Снежная, 17к2</p>
+          <b>Открыть карту ↗</b>
+        </a>
+        <a className="early-location-card pink" href="https://yandex.ru/maps/?text=Москва%2C%20Северное%20Чертаново%201к1" target="_blank" rel="noreferrer">
+          <span>на юге · 7 минут от метро</span>
+          <strong>Чертаново</strong>
+          <p>мкр Северное Чертаново, 1к1</p>
+          <b>Открыть карту ↗</b>
+        </a>
+      </section>
+
       <section className="facts" aria-label="Коротко о школе">
         {facts.map(([mark, text]) => (
           <article className="fact" key={text}>
