@@ -12,7 +12,7 @@ def local_src(value: str) -> str:
 
 OUT.mkdir(parents=True, exist_ok=True)
 shutil.copytree(ROOT / "public" / "assets", OUT / "assets", dirs_exist_ok=True)
-request = urllib.request.Request("http://localhost:3012/", headers={"User-Agent": "Mozilla/5.0"})
+request = urllib.request.Request("http://localhost:3013/", headers={"User-Agent": "Mozilla/5.0"})
 source = urllib.request.urlopen(request, timeout=30).read().decode("utf-8")
 start, end = source.find("<main"), source.find("</main>")
 fragment = source[start:end + 7]
