@@ -80,7 +80,7 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow">творческая мастерская «баня»</p>
           <h1>Самая смешная <span>(и научная!)</span> школа рисования</h1>
-          <p className="hero-age">для детей 4–13 лет и взрослых в Москве</p>
+          <p className="hero-age">для детей 4–13 лет в Москве</p>
           <div className="hero-points">
             <p>учим понимать правила, а не срисовывать</p>
             <p>объясняем принципы рисования понятными словами, чтобы ваш ребёнок смог сам нарисовать всё, что придумает</p>
@@ -178,7 +178,14 @@ export default function Home() {
         <ol className="step-grid">
           {steps.map((step, i) => <li key={step}><span>{String(i + 1).padStart(2, "0")}</span><p>{step}</p></li>)}
         </ol>
-        <div className="inline-trial"><SignupForm compact /></div>
+        <div className="inline-trial consultation-card">
+          <div className="consultation-copy">
+            <p className="eyebrow">поможем разобраться</p>
+            <h3>Есть вопрос?</h3>
+            <p>Оставьте номер — администратор свяжется с вами, расскажет о программах и поможет выбрать подходящую группу.</p>
+          </div>
+          <SignupForm compact variant="consultation" />
+        </div>
       </section>
 
       <section className="prices section" id="prices">

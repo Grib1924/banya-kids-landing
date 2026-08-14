@@ -2,17 +2,20 @@
 
 import { FormEvent, useState } from "react";
 
-export default function SignupForm({ compact = false }: { compact?: boolean }) {
+export default function SignupForm({ compact = false, variant = "trial" }: { compact?: boolean; variant?: "trial" | "consultation" }) {
   const [sent, setSent] = useState(false);
+  const isConsultation = variant === "consultation";
   function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setSent(true);
   }
   return (
-    <form className={`signup-form ${compact ? "compact" : ""}`} onSubmit={submit}>
+    <form className={`signup-form ${compact ? "compact" : ""}`} onSubmit={submit} data-form-type={variant}>
+      <input type="hidden" name="lead_type" value={variant} />
+      <input type="hidden" name="form_name" value={isConsultation ? "Детская посадка — консультация" : "Детская посадка — пробное занятие"} />
       <label><span>Ваше имя</span><input name="name" autoComplete="name" placeholder="Как к вам обращаться?" required /></label>
       <label><span>Телефон</span><input name="phone" autoComplete="tel" inputMode="tel" placeholder="+7 999 000-00-00" required /></label>
-      <button type="submit">{sent ? "Заявка принята ✓" : "Записаться бесплатно"}</button>
+      <button type="submit">{sent ? "Заявка принята ✓" : isConsultation ? "Получить консультацию" : "Записаться бесплатно"}</button>
       <small>Нажимая кнопку, вы соглашаетесь с <a href="https://v-bane.com/privacy" target="_blank">политикой конфиденциальности</a>.</small>
       {sent && <p className="success" role="status">Спасибо! Для рабочей версии на Tilda подключим форму к вашей CRM.</p>}
     </form>
