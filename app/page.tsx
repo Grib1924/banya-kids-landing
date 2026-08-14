@@ -79,7 +79,7 @@ export default function Home() {
         </div>
         <div className="hero-copy">
           <p className="eyebrow">творческая мастерская «баня»</p>
-          <h1>Самая смешная <span>(и научная!)</span> школа рисования</h1>
+          <h1>Самая весёлая <span>(и научная!)</span> школа рисования</h1>
           <p className="hero-age">для детей 4–13 лет в Москве</p>
           <div className="hero-points">
             <p>учим понимать правила, а не срисовывать</p>
