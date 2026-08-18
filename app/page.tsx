@@ -74,8 +74,8 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-photo">
-          <img className="hero-image hero-image-desktop" src="/assets/hero-desktop.jpg" alt="Ребёнок рисует на занятии в школе «Баня»" />
-          <img className="hero-image hero-image-mobile" src="/assets/hero-mobile.jpg" alt="Ребёнок показывает свою работу на занятии в школе «Баня»" />
+          <img className="hero-image hero-image-desktop" src="/assets/hero-happy-desktop.jpg" alt="Ученица школы «Баня» показывает свою работу" />
+          <img className="hero-image hero-image-mobile" src="/assets/hero-happy-mobile.jpg" alt="Ученики школы «Баня» показывают свои работы" />
           <span className="photo-sticker">понимать, а не срисовывать</span>
         </div>
         <div className="hero-copy">
