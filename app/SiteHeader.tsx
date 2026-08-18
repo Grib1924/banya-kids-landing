@@ -25,7 +25,7 @@ export default function SiteHeader() {
           <a href="#contacts" onClick={close}>контакты</a>
         </nav>
         <div className="header-actions">
-          <a className="contact-button call" href="tel:+79953012903" aria-label="Позвонить в творческую мастерскую Баня">Позвонить</a>
+          <a className="contact-button call" href="tel:+79953012903" aria-label="Позвонить в школу рисования Баня">Позвонить</a>
           <a className="contact-button message" href="https://wa.me/79953012903" target="_blank" rel="noreferrer" aria-label="Написать в WhatsApp">Написать</a>
           <a className="mini-cta" href="#trial" onClick={close}>Пробное бесплатно</a>
         </div>

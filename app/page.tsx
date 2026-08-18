@@ -78,8 +78,8 @@ export default function Home() {
           <span className="photo-sticker">понимать, а не срисовывать</span>
         </div>
         <div className="hero-copy">
-          <p className="eyebrow">творческая мастерская «баня»</p>
-          <h1>Самая весёлая <span>(и научная!)</span> школа рисования</h1>
+          <p className="eyebrow">школа рисования «баня»</p>
+          <h1>Самая смешная <span>(и научная!)</span> школа рисования</h1>
           <p className="hero-age">для детей 4–13 лет в Москве</p>
           <div className="hero-points">
             <p>учим понимать правила, а не срисовывать</p>
@@ -90,7 +90,7 @@ export default function Home() {
         <Image className="hero-doodle" src="/assets/loop-arrow.png" alt="" width={120} height={120} />
       </section>
 
-      <section className="early-locations" aria-label="Филиалы творческой мастерской Баня">
+      <section className="early-locations" aria-label="Филиалы школы рисования Баня">
         <div className="early-locations-intro">
           <p className="eyebrow">два филиала в Москве</p>
           <h2>Выберите тот, что ближе</h2>
@@ -171,7 +171,7 @@ export default function Home() {
       <section className="teachers section" id="teachers">
         <div className="section-heading split-heading">
           <div><p className="eyebrow">рядом, когда нужно</p><h2>Наши учителя</h2></div>
-          <p>Не рисуют за ученика, а помогают ему увидеть закономерность, попробовать и найти собственное решение.</p>
+          <p>Мы не рисуем за ученика, а помогаем ему увидеть закономерность, попробовать и найти собственное решение.</p>
         </div>
         <div className="teacher-grid">
           {teachers.map(([image, quote], i) => (
@@ -261,7 +261,7 @@ export default function Home() {
           <iframe title="Карта филиала в Свиблово" src="https://yandex.ru/map-widget/v1/?mode=search&text=Москва%2C%20Снежная%2017к2&z=15" loading="lazy" />
           <iframe title="Карта филиала в Чертаново" src="https://yandex.ru/map-widget/v1/?mode=search&text=Москва%2C%20Северное%20Чертаново%201к1&z=15" loading="lazy" />
         </div>
-        <div className="footer-bottom"><span>© творческая мастерская «баня», 2019–2026</span><a href="https://v-bane.com/privacy" target="_blank">политика конфиденциальности</a></div>
+        <div className="footer-bottom"><span>© школа рисования «баня», 2019–2026</span><a href="https://v-bane.com/privacy" target="_blank">политика конфиденциальности</a></div>
       </footer>
     </main>
   );
