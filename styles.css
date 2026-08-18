@@ -450,3 +450,70 @@ h1,.section-heading h2,.trial-band h2,footer h2{font-weight:700;letter-spacing:-
   .why-photo,.teacher-photo{border-radius:0}
   .direction-card{border-radius:0}
 }
+
+/* Первый экран: текст и фотография — два самостоятельных блока */
+.hero {
+  min-height:calc(100vh - 88px);
+  display:grid;
+  grid-template-columns:minmax(0,48%) minmax(0,52%);
+  background:var(--blue);
+  overflow:hidden;
+}
+.hero::after { display:none; }
+.hero-copy {
+  grid-column:1;
+  grid-row:1;
+  width:100%;
+  min-height:calc(100vh - 88px);
+  padding:64px clamp(30px,5vw,78px);
+  background:var(--blue);
+}
+.hero-photo {
+  position:relative;
+  inset:auto;
+  grid-column:2;
+  grid-row:1;
+  min-height:calc(100vh - 88px);
+  background:#f4f1ff;
+}
+.hero-photo .hero-image {
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+.hero-photo .hero-image-desktop { display:block; }
+.hero-photo .hero-image-mobile { display:none; }
+.hero-doodle { display:none; }
+.hero .primary-button {
+  border-color:var(--pink);
+  box-shadow:none;
+}
+
+@media(max-width:700px) {
+  .hero {
+    min-height:0;
+    grid-template-columns:1fr;
+    grid-template-rows:auto auto;
+  }
+  .hero-copy {
+    grid-column:1;
+    grid-row:1;
+    min-height:0;
+    padding:48px 20px 46px;
+  }
+  .hero-photo {
+    grid-column:1;
+    grid-row:2;
+    min-height:0;
+    aspect-ratio:4 / 3;
+  }
+  .hero-photo .hero-image-desktop { display:none; }
+  .hero-photo .hero-image-mobile { display:block; }
+  .photo-sticker {
+    right:16px;
+    bottom:14px;
+  }
+}
