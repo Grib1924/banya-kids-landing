@@ -516,4 +516,13 @@ h1,.section-heading h2,.trial-band h2,footer h2{font-weight:700;letter-spacing:-
     right:16px;
     bottom:14px;
   }
+  .section { padding-top:58px; padding-bottom:58px; }
+  .section-heading { margin-bottom:30px; }
+  .direction-list { gap:28px; }
+  .trial-band { padding-top:58px; padding-bottom:58px; }
+  .inline-trial { margin-top:44px; }
+  .early-locations { padding-top:28px; padding-bottom:28px; }
+  .consultation-card { margin-top:36px; }
+  .manifesto { margin-top:38px; }
+  .price-form { margin-top:36px; }
 }

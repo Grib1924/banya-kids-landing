@@ -20,7 +20,7 @@ const reasons = [
 
 const directions = [
   {
-    title: "Рисование и скульптура",
+    title: "рисование и скульптура",
     age: "для детей 4–10 лет",
     image: "/assets/drawing.jpeg",
     tags: ["1 час", "материалы включены", "мини-группы 4–5, 6–8 и 8–10 лет"],
@@ -28,7 +28,7 @@ const directions = [
     note: "На каждом занятии получаются уникальные работы — каждый может выразить себя в творчестве.",
   },
   {
-    title: "Комикс и иллюстрация",
+    title: "комикс и иллюстрация",
     age: "для детей 8–13 лет",
     image: "/assets/sculpture.jpeg",
     tags: ["1 час — 8–10 лет", "2 часа — 11–13 лет", "материалы включены"],
@@ -36,7 +36,7 @@ const directions = [
     note: "Идеально дополняет академическое рисование и подходит ребятам, которые увлекаются аниме.",
   },
   {
-    title: "Рисунок и живопись",
+    title: "рисунок и живопись",
     age: "для детей 11–13 лет",
     image: "/assets/teen.jpg",
     tags: ["2 часа", "рисунок", "живопись и композиция"],
@@ -80,7 +80,7 @@ export default function Home() {
         </div>
         <div className="hero-copy">
           <p className="eyebrow">школа рисования «баня»</p>
-          <h1>Самая смешная <span>(и научная!)</span> школа рисования</h1>
+          <h1>самая смешная <span>(и научная!)</span> школа рисования</h1>
           <p className="hero-age">для детей 4–13 лет в Москве</p>
           <div className="hero-points">
             <p>учим понимать правила, а не срисовывать</p>
@@ -94,7 +94,7 @@ export default function Home() {
       <section className="early-locations" aria-label="Филиалы школы рисования Баня">
         <div className="early-locations-intro">
           <p className="eyebrow">два филиала в Москве</p>
-          <h2>Выберите тот, что ближе</h2>
+          <h2>выберите тот, что ближе</h2>
         </div>
         <a className="early-location-card" href="https://yandex.ru/maps/?text=Москва%2C%20Снежная%2017к2" target="_blank" rel="noreferrer">
           <span>на севере · 4 минуты от метро</span>
@@ -122,7 +122,7 @@ export default function Home() {
       <section className="why section" id="about">
         <div className="section-heading">
           <p className="eyebrow">забота + академическая база</p>
-          <h2>Почему нас так любят родители?</h2>
+          <h2>почему нас так любят родители</h2>
         </div>
         <div className="why-layout">
           <div className="why-photo">
@@ -138,7 +138,7 @@ export default function Home() {
 
       <section className="directions section" id="directions">
         <div className="section-heading split-heading">
-          <div><p className="eyebrow">единый абонемент</p><h2>Наши направления</h2></div>
+          <div><p className="eyebrow">единый абонемент</p><h2>наши направления</h2></div>
           <p>Не выбирайте, а сочетайте в одном абонементе разные направления</p>
         </div>
         <div className="direction-list">
@@ -163,7 +163,7 @@ export default function Home() {
       <section className="trial-band" id="trial">
         <div>
           <p className="eyebrow light">первое знакомство</p>
-          <h2>Попробуйте любое направление бесплатно</h2>
+          <h2>попробуйте любое направление бесплатно</h2>
           <p>Оставьте телефон — администратор напишет вам и подберёт группу.</p>
         </div>
         <SignupForm />
@@ -171,7 +171,7 @@ export default function Home() {
 
       <section className="teachers section" id="teachers">
         <div className="section-heading split-heading">
-          <div><p className="eyebrow">рядом, когда нужно</p><h2>Наши учителя</h2></div>
+          <div><p className="eyebrow">рядом, когда нужно</p><h2>наши учителя</h2></div>
           <p>Мы не рисуем за ученика, а помогаем ему увидеть закономерность, попробовать и найти собственное решение.</p>
         </div>
         <div className="teacher-grid">
@@ -185,7 +185,7 @@ export default function Home() {
       </section>
 
       <section className="reviews section" id="reviews">
-        <div className="section-heading"><p className="eyebrow light">говорят лучше нас</p><h2>Что говорят родители!</h2></div>
+        <div className="section-heading"><p className="eyebrow light">говорят лучше нас</p><h2>что говорят родители</h2></div>
         <div className="review-track">
           {[1, 2, 3, 4, 5, 6, 7, 8].map(i => (
             <figure key={i}><Image src={`/assets/review-${i}.png`} alt={`Отзыв родителя о мастерской Баня ${i}`} width={420} height={620} /></figure>
@@ -194,14 +194,14 @@ export default function Home() {
       </section>
 
       <section className="steps section" id="how">
-        <div className="section-heading"><p className="eyebrow">никакого экзамена</p><h2>Как проходит бесплатное пробное занятие</h2></div>
+        <div className="section-heading"><p className="eyebrow">никакого экзамена</p><h2>как проходит бесплатное пробное занятие</h2></div>
         <ol className="step-grid">
           {steps.map((step, i) => <li key={step}><span>{String(i + 1).padStart(2, "0")}</span><p>{step}</p></li>)}
         </ol>
         <div className="inline-trial consultation-card">
           <div className="consultation-copy">
             <p className="eyebrow">поможем разобраться</p>
-            <h3>Есть вопрос?</h3>
+            <h3>есть вопрос</h3>
             <p>Оставьте номер — администратор свяжется с вами, расскажет о программах и поможет выбрать подходящую группу.</p>
           </div>
           <SignupForm compact variant="consultation" />
@@ -210,7 +210,7 @@ export default function Home() {
 
       <section className="prices section" id="prices">
         <div className="section-heading split-heading">
-          <div><p className="eyebrow">единый абонемент</p><h2>Цены</h2></div>
+          <div><p className="eyebrow">единый абонемент</p><h2>цены</h2></div>
           <p>Занимайтесь по удобному графику — мы не привязываем вас к одной и той же группе.</p>
         </div>
         <div className="price-benefits">
@@ -221,25 +221,25 @@ export default function Home() {
         </div>
         <div className="price-grid">
           <article className="price-card pink">
-            <p className="price-kicker">4–10 лет · 1 час</p><h3>Рисование + скульптура</h3>
+            <p className="price-kicker">4–10 лет · 1 час</p><h3>рисование + скульптура</h3>
             <div className="price-row"><span>разовое</span><b>1 500 ₽</b></div>
             <div className="price-row"><span>4 занятия · 5 недель</span><b>5 600 ₽</b></div>
             <div className="price-row"><span>8 занятий · 2,5 месяца</span><b>10 500 ₽</b></div>
             <div className="price-row"><span>16 занятий · 5 месяцев</span><b>18 000 ₽</b></div>
           </article>
           <article className="price-card blue">
-            <p className="price-kicker">8–13 лет · 2 часа</p><h3>Рисунок + живопись + комикс</h3>
+            <p className="price-kicker">8–13 лет · 2 часа</p><h3>рисунок + живопись + комикс</h3>
             <div className="price-row"><span>разовое</span><b>2 200 ₽</b></div>
             <div className="price-row"><span>4 занятия · 5 недель</span><b>8 600 ₽</b></div>
             <div className="price-row"><span>8 занятий · 2,5 месяца</span><b>16 000 ₽</b></div>
             <div className="price-row"><span>16 занятий · 5 месяцев</span><b>29 000 ₽</b></div>
           </article>
         </div>
-        <div className="price-form"><h3>Первое занятие — бесплатно</h3><SignupForm compact /></div>
+        <div className="price-form"><h3>первое занятие — бесплатно</h3><SignupForm compact /></div>
       </section>
 
       <section className="faq section" id="faq">
-        <div className="section-heading"><p className="eyebrow">спросить — нормально</p><h2>Частые вопросы!</h2></div>
+        <div className="section-heading"><p className="eyebrow">спросить — нормально</p><h2>частые вопросы</h2></div>
         <div className="faq-list">
           {faq.map(([question, answer], i) => (
             <details key={question} open={i === 0}>
@@ -252,10 +252,10 @@ export default function Home() {
 
       <footer id="contacts">
         <div className="footer-top">
-          <div><Image src="/assets/logo.png" alt="Баня" width={150} height={100} /><h2>Ждём в гости!</h2><a href="tel:+79953012903">+7 (995) 301-29-03</a><a href="mailto:pismo.v.banu@gmail.com">pismo.v.banu@gmail.com</a></div>
+          <div><Image src="/assets/logo.png" alt="Баня" width={150} height={100} /><h2>ждём в гости</h2><a href="tel:+79953012903">+7 (995) 301-29-03</a><a href="mailto:pismo.v.banu@gmail.com">pismo.v.banu@gmail.com</a></div>
           <div className="address-list">
-            <article><span>на севере</span><h3>Свиблово</h3><p>ул. Снежная, 17к2<br />4 минуты от метро</p><a href="https://yandex.ru/maps/?text=Москва%2C%20Снежная%2017к2" target="_blank">открыть карту ↗</a></article>
-            <article><span>на юге</span><h3>Чертаново</h3><p>мкр Северное Чертаново, 1к1<br />7 минут от метро</p><a href="https://yandex.ru/maps/?text=Москва%2C%20Северное%20Чертаново%201к1" target="_blank">открыть карту ↗</a></article>
+            <article><span>на севере</span><h3>свиблово</h3><p>ул. Снежная, 17к2<br />4 минуты от метро</p><a href="https://yandex.ru/maps/?text=Москва%2C%20Снежная%2017к2" target="_blank">открыть карту ↗</a></article>
+            <article><span>на юге</span><h3>чертаново</h3><p>мкр Северное Чертаново, 1к1<br />7 минут от метро</p><a href="https://yandex.ru/maps/?text=Москва%2C%20Северное%20Чертаново%201к1" target="_blank">открыть карту ↗</a></article>
           </div>
         </div>
         <div className="maps">
