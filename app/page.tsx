@@ -98,15 +98,15 @@ export default function Home() {
         </div>
         <a className="early-location-card" href="https://yandex.ru/maps/?text=Москва%2C%20Снежная%2017к2" target="_blank" rel="noreferrer">
           <span>на севере · 4 минуты от метро</span>
-          <strong>Свиблово</strong>
+          <strong>свиблово</strong>
           <p>ул. Снежная, 17к2</p>
-          <b>Открыть карту ↗</b>
+          <b>открыть карту ↗</b>
         </a>
         <a className="early-location-card pink" href="https://yandex.ru/maps/?text=Москва%2C%20Северное%20Чертаново%201к1" target="_blank" rel="noreferrer">
           <span>на юге · 7 минут от метро</span>
-          <strong>Чертаново</strong>
+          <strong>чертаново</strong>
           <p>мкр Северное Чертаново, 1к1</p>
-          <b>Открыть карту ↗</b>
+          <b>открыть карту ↗</b>
         </a>
       </section>
 
@@ -133,13 +133,13 @@ export default function Home() {
             {reasons.map((reason, i) => <li key={reason}><span>{String(i + 1).padStart(2, "0")}</span><p>{reason}</p></li>)}
           </ol>
         </div>
-        <p className="manifesto">Наша цель — научить замечать, анализировать, вдохновляться. <strong>А умение красиво рисовать — просто побочный эффект :)</strong></p>
+        <p className="manifesto">наша цель — научить замечать, анализировать, вдохновляться <strong>а умение красиво рисовать — просто побочный эффект :)</strong></p>
       </section>
 
       <section className="directions section" id="directions">
         <div className="section-heading split-heading">
           <div><p className="eyebrow">единый абонемент</p><h2>наши направления</h2></div>
-          <p>Не выбирайте, а сочетайте в одном абонементе разные направления</p>
+          <p>не выбирайте, а сочетайте в одном абонементе разные направления</p>
         </div>
         <div className="direction-list">
           {directions.map((item, i) => (
@@ -211,7 +211,7 @@ export default function Home() {
       <section className="prices section" id="prices">
         <div className="section-heading split-heading">
           <div><p className="eyebrow">единый абонемент</p><h2>цены</h2></div>
-          <p>Занимайтесь по удобному графику — мы не привязываем вас к одной и той же группе.</p>
+          <p>занимайтесь по удобному графику — мы не привязываем вас к одной и той же группе</p>
         </div>
         <div className="price-benefits">
           <span>занятия списываем только после посещения</span>
