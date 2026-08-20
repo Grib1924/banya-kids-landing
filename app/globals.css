@@ -619,3 +619,7 @@ h1,h2,h3 { text-transform:lowercase; }
     padding:10px 20px;
   }
 }
+
+.teacher-card:nth-child(1) .teacher-photo img { object-position:center 48%; }
+.teacher-card:nth-child(2) .teacher-photo img { object-position:center 72%; }
+.teacher-card:nth-child(3) .teacher-photo img { object-position:center 64%; }
