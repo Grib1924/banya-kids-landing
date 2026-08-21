@@ -98,6 +98,12 @@ h1 span { font-family:"Pangolin",cursive; color:var(--light-pink); font-weight:4
 .signup-form button:hover { transform:translateY(-2px); box-shadow:4px 6px 0 var(--ink); }
 .signup-form small,.signup-form .success { grid-column:1/-1; font-size:9px; line-height:1.4; margin:0; }
 .signup-form .success { font-size:12px; color:var(--blue); font-weight:800; }
+.form-success-popup{position:fixed;inset:0;z-index:10000;display:grid;place-items:center;padding:20px;background:rgba(6,0,222,.72)}
+.form-success-popup__card{position:relative;width:min(460px,100%);padding:42px 32px 32px;background:#fff;color:var(--ink);border-radius:8px;text-align:left}
+.form-success-popup__card h2{margin:0 0 12px;font-size:clamp(30px,5vw,48px);font-weight:600;text-transform:none}
+.form-success-popup__card p{margin:0 0 24px;font-size:18px;line-height:1.45}
+.form-success-popup__card button{border:0;border-radius:8px;background:var(--pink);color:#fff;padding:14px 24px;font-weight:700;cursor:pointer}
+.form-success-popup__close{position:absolute;top:10px;right:12px;background:transparent!important;color:var(--ink)!important;padding:4px 10px!important;font-size:30px;line-height:1}
 .signup-form.compact { box-shadow:none; border:2px solid var(--ink); }
 .teacher-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
 .teacher-card { position:relative; }
